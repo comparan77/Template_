@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('ventas', { title: 'Ventas' });
+  res.render('ventas', { title: 'Ventas', option: 'ventas', needTbl: true });
 });
 
 /* Test. */
@@ -22,8 +22,8 @@ router.get('/refacciones', function(req, res, next) {
 });
 
 /* Test. */
-router.get('/servicios', function(req, res, next) {
-  res.render('servicios', { title: 'Servicios', option: 'servicios' });
+router.get('/citas', function(req, res, next) {
+  res.render('citas', { title: 'Citas', option: 'citas' });
 });
 
 module.exports = router;

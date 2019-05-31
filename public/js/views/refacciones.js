@@ -14,7 +14,6 @@ $(document).ready(function() {
 });  
 
 var substringMatcher = function(strs) {
-    console.log('inicio');
     return function findMatches(q, cb) {
       var matches, substringRegex;
         console.log('qaui');

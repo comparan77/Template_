@@ -52,10 +52,19 @@ html(lang='es_MX')
           a.nav-link(href='refacciones')
             i.fas.fa-fw.fa-boxes
             span Refacciones y Accesorios
-        li.nav-item(class=(option=="servicios"?'active':''))
-          a.nav-link(href='servicios')
+        li.nav-item
+          a.nav-link.collapsed(href='#' data-toggle="collapse" data-target="#collapseServices" aria-expanded="true" aria-controls="collapseServices")
             i.fas.fa-fw.fa-tasks
             span Servicios
+          #collapseServices.collapse(aria-labelledby="headingServices" data-parent="#accordionSidebar")
+            div.bg-white.py-2.collapse-inner.rounded
+              a.collapse-item(href="citas") Citas
+              a.collapse-item(href="citas") Diagnóstico
+              a.collapse-item(href="citas") Cotización
+              a.collapse-item(href="citas") Ord. Trabajo
+              a.collapse-item(href="citas") Req. Materiales
+              a.collapse-item(href="citas") Proforma
+              a.collapse-item(href="citas") Entrega              
         hr.sidebar-divider.d-none.d-md-block
         div.text-center.d-none.d-md-inline
           button#sidebarToggle.rounded-circle.border-0
@@ -181,7 +190,8 @@ html(lang='es_MX')
             a.btn.btn-primary(href="login.html") Cerrar sesión
  
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    //- <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
@@ -205,7 +215,6 @@ html(lang='es_MX')
     link(rel='stylesheet', href='/js/bootstrap.min.js')
 
     <!-- Type head twitter-->
-    <link href="//raw.github.com/jharding/typeahead.js-bootstrap.css/master/typeahead.js-bootstrap.css" rel="stylesheet" media="screen">
     <script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.min.js"></script>
 
     <!-- Custom for each page loaded -->
