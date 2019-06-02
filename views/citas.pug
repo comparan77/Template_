@@ -24,22 +24,26 @@ block content
           div.m-0.font-weight-bold.text-primary Datos de la moto
         div.card-body
           div.form-group
-            label(for='txt_cte') Cliente
-            input#txt_cte.form-control(placeholder='Nombre del cliente' type='text')
+            div.row
+              div.col
+                div.dropdown
+                  button#ddlModelo.btn.btn-secondary.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%") Modelo
+                  div.dropdown-menu(aria-labelledby="ddlModelo")
+                    a.dropdown-item(href="#") Pulsar 135
+                    a.dropdown-item(href="#") Dominar 400
+                    a.dropdown-item(href="#") Boxer 150
+              div.col
+                div.dropdown
+                  button#ddlAnio.btn.btn-secondary.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%") Año (Sujeto al modelo)
+                  div.dropdown-menu(aria-labelledby="ddlAnio")
+                    a.dropdown-item(href="#") 2017
+                    a.dropdown-item(href="#") 2018
+                    a.dropdown-item(href="#") 2019
           div.form-group
-            table(width='100%')
-              tbody
-                tr
-                  td(align='right') SUBTOTAL
-                  td(align='right') 0.00
-                tr
-                  td(align='right') I.V.A.
-                  td(align='right') 0.00
-                tr
-                  td(align='right') TOTAL
-                  td(align='right') 0.00
+            div#div_fecha_cita
+              input.form-control(type='text')
           div.form-group
             a.btn.btn-primary.btn-icon-split(href='#')
               span.icon.text-white-50
                 i.fas.fa-arrow-right
-              span.text Realizar Venta
+              span.text Guardar cita
