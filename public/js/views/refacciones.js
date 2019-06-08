@@ -35,13 +35,12 @@ var substringMatcher = function(strs) {
     };
   };
 
-  var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
-  'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
-  'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
-  'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
-  'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
-  'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
-  'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
-  'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
-  'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+  var states = ['DISCO FRENO DELANTERO PULSAR 200 (SKU: 52JL0141)', 
+  'LEVA DE FRENO AVENGER (SKU: DG151059)',
+  'DISCO FRENO TRASERO (SKU: DG151059)',
+  'PEDAL DE FRENO DISCOVER (SKU: 52JL0142)',
+  'BOMBA DE FRENO TRASERO PULSAR (SKU: JZ161009)',
+  'PEDAL FRENO TRASERO PULSAR (SKU: JL161001)',
+  'BOMBA DE FRENO (SKU: DJ191056)',
+  'DISCO DE FRENO DELANTERO DOMINAR (SKU: JF131817)',
 ];
