@@ -10,13 +10,19 @@ $(document).ready(function() {
         {
         name: 'states',
         source: substringMatcher(states)
-    });    
+    });
+    
+    $('#txt_search').bind('typeahead:select', function(ev, suggestion) {
+      $('#step-1').hide();
+      $('#step-2').removeAttr('hidden');
+    });
+    
 });  
 
 var substringMatcher = function(strs) {
     return function findMatches(q, cb) {
       var matches, substringRegex;
-        console.log('qaui');
+
       // an array that will be populated with substring matches
       matches = [];
   
